@@ -1,0 +1,129 @@
+body {
+    background-image: url("PRBGG.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(11px);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    overflow-y: scroll;
+  }
+  
+  h1,h2 {
+    color: white;
+  }
+  
+  .tutorials-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+  .tutorial-item {
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  
+  .tutorial-item iframe {
+    width: 95%;
+    height: 220px;
+    border-radius: 1rem;
+  }
+  
+  .tutorial-item .text-overlay {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 1000px;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 85%;
+  }
+  
+  .navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .navbar ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .navbar ul li::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s;
+  }
+  
+  .navbar ul li:hover::after {
+    width: 100%;
+  }
+  
+  .title {
+    margin-top: 5rem;
+    font-size: 4.2rem;
+  }
+  
+  .scrolled {
+    filter: blur(5px);
+    transition: filter 0.5s;
+  }
+  @media screen and (max-width: 600px) {
+    .navbar {
+      padding: 10px;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      align-items: flex-end;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.75);
+      width: 100%;
+      padding: 10px;
+      display: none;
+    }
+  
+    .navbar ul.show {
+      display: flex;
+    }
+  
+    .navbar ul li {
+      margin: 10px 0;
+    }
+  
+    .navbar ul li::after {
+      display: none;
+    }
+  
+    .navbar .menu-toggle {
+      display: block;
+      color: white;
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
