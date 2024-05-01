@@ -18,34 +18,7 @@ position: upper left;
 top: 0;
 left: 0;
 }
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.navbar ul li {
-  display: inline-block;
-  margin: 0 10px;
-  position: relative;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: white;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.5s;
-}
-.navbar ul li:hover::after {
-  width: 100%;
-}
+
 .content {
   width: 100%;
   position: absolute;
@@ -62,7 +35,7 @@ left: 0;
 .content p {
   margin: 20px auto;
   font-weight: 100;
-  line-height: 5px;
+  line-height: 10px;
 }
 h1, p {
   color: white;
