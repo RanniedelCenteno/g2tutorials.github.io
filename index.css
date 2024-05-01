@@ -10,15 +10,6 @@
   background-size: cover;
   background-position: center;
 }
-.logo {
-width: 90%;
-max-width: 150px;
-cursor: pointer;
-position: upper left;
-top: 0;
-left: 0;
-}
-
 .content {
   width: 100%;
   position: absolute;
