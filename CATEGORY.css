@@ -1,122 +1,119 @@
 * {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  background-image: url("PRBGG.jpg");
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(11px);
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 5%;
-  overflow-y: scroll;
-}
-.navbar {
-  position: upper right;
-  top: 0;
-  right: 0;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  font-size: 1.5rem;
-}
-.logo {
-  width: 120%;
-  max-width: 100px;
-  cursor: pointer;
-  position: upper left;
-  top: 0;
-  left: 0;
-}
-.logo::after {
-  content: "34234";
-}
-.navbar ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-.navbar ul li {
-  display: inline-block;
-  margin: 0 10px;
-  position: relative;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-.navbar ul li::after {
-  content: "";
-  height: 3px;
-  width: 0;
-  background: white;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: width 0.5s;
-}
-.navbar ul li:hover::after {
-  width: 100%;
-}
-a {
-  text-decoration: none;
-}
-h1 {
-  text-align: center;
-  margin-bottom: 0px;
-  color: #fff;
-  font-size: 4rem;
-  font-family: Arial, sans-serif;
-}
-p {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #fff;
-  font-size: 2rem;
-  font-family: Arial, sans-serif;
-}
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.service {
-  flex: 1 1 300px;
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border: 1px solid #ccc;
-}
-.service h2 a {
-  text-decoration: none;
-  color: blue;
-}
-
-.service:hover {
-  transform: translateY(-5px);
-}
-
-.service h2 {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
-
-.service p {
-  font-size: 16px;
-  color: #777;
-}
-
-@media screen and (max-width: 768px) {
-  .service {
-    flex-basis: 100%;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
+  
+  body {
+    background-image: url("PRBGG.jpg");
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(11px);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 5%;
+    overflow-y: scroll;
+  }
+  .navbar {
+    position: upper right;
+    top: 0;
+    right: 0;
+    padding: 0;
+    display:inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.2rem;
+    }
+    .logo {
+    width: 20%;
+    max-width: 100px;
+    cursor: pointer;
+    position: upper left;
+    top: 0;
+    left: 0;
+    }
+    .navbar ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .navbar ul li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .navbar ul li::after {
+      content: "";
+      height: 3px;
+      width: 0;
+      background: white;
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      transition: width 0.5s;
+    }
+    .navbar ul li:hover::after {
+      width: 100%;
 }
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 0px;
+    color: #fff;
+    font-size: 4rem;
+    font-family: Arial, sans-serif;
+  }
+  p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  .services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .service {
+    flex: 1 1 300px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+  }
+  .service h2 a {
+    text-decoration: none; 
+    color: blue; 
+  }
+  
+  .service:hover {
+    transform: translateY(-5px);
+  }
+  
+  .service h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    color: #777;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .service {
+      flex-basis: 100%;
+    }
+  }
