@@ -21,7 +21,7 @@
   width: 100%;
   }
   .logo {
-  width: 100%;
+  width: 90%;
   max-width: 100px;
   cursor: pointer;
   position: upper left;
@@ -177,4 +177,7 @@
     border-radius: 3px;
     cursor: pointer;
   }
+      .paragraph {
+  margin: 20px;
+}
   }
