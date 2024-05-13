@@ -177,4 +177,7 @@
     border-radius: 3px;
     cursor: pointer;
   }
+      .paragraph {
+  margin: 20px;
+}
   }
